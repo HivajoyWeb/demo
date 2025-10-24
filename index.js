@@ -31,9 +31,6 @@ function writeData(data) {
   }
 }
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/index.html'));
-});
 
 // ➕ POST: Add new user
 app.post('/api/users', (req, res) => {
